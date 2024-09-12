@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Dark theme */
+body.dark {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+/* Theme Toggle Icon (positioned on the right side) */
+#themeToggleIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+#themeToggleIcon:hover {
+    color: #0056b3;
+}
+
+/* Switch icon when dark theme is active */
+body.dark #themeToggleIcon {
+    color: #f4f4f9;
+}
+
+/* Center the form and table */
+.form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Dark theme for form */
+body.dark .form-container {
+    background-color: #444;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Dark theme for input fields */
+body.dark input[type="text"],
+body.dark input[type="email"],
+body.dark input[type="number"] {
+    background-color: #555;
+    border: 1px solid #888;
+    color: white;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: #f4f4f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+/* Dark theme for table */
+body.dark thead {
+    background-color: #0056b3;
+}
+
+body.dark tbody tr {
+    background-color: #444;
+}
+
+body.dark tbody tr:nth-child(even) {
+    background-color: #555;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Edit and Delete buttons */
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        padding: 8px;
+    }
+
+    button,
+    input[type="submit"] {
+        padding: 8px 16px;
+    }
+}

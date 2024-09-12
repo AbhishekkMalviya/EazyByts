@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle Icon -->
+    <i id="themeToggleIcon" class="fas fa-sun"></i>
+<h1></h1>
+    <h1>Customer Relationship Management (CRM) System</h1>
+
+    <!-- Form to Insert or Update Customer -->
+    <div class="form-container">
+        <h2 id="formTitle">Add Customer</h2>
+        <form id="customerForm">
+            <input type="hidden" id="customerId" name="customerId"> <!-- Hidden field to store customer ID for editing -->
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Table to Display Customers -->
+    <h2>Customer List</h2>
+    <button id="toggleTableBtn">Hide Customer List</button>
+    <table id="customerTable">
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamically filled using JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
